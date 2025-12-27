@@ -49,3 +49,11 @@ class OrderSerializer(serializers.ModelSerializer):
     def get_outstanding(self, obj):
         return self.get_order_total(obj) - self.get_total_paid(obj)
 
+
+from rest_framework import serializers
+from .models import Book
+
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
+        fields = "__all__"

@@ -80,15 +80,15 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'mohanrestarent',  # The name of your PostgreSQL database
-            'USER': 'postgres',  # The PostgreSQL username
-            'PASSWORD': 'Mohan@123',  # The password for the PostgreSQL user
-            'HOST': 'localhost',  # Or the IP address/hostname of your PostgreSQL server
-            'PORT': '5434',  # The port PostgreSQL is running on (default is 5432)
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'restarentdb1',
+        'USER': 'mohanuser',
+        'PASSWORD': 'Mohan8978636140',
+        'HOST': 'restarentdb1.c47gw6kwu5ia.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
+} 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
